@@ -9,19 +9,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar'
 import { ServService } from './serv.service';
+import {HttpClientModule} from '@angular/common/http';
+import { SpaceXComponent } from './space-x/space-x.component'
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListCompComponent,
-    TodoTableCompComponent
+    TodoTableCompComponent,
+    SpaceXComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [ServService],
   bootstrap: [AppComponent]

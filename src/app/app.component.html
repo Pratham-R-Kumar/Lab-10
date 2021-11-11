@@ -1,6 +1,10 @@
 <div class="head">
   <h4>Welcome to ToDo Application</h4>
 </div>
-
-<app-todo-list-comp></app-todo-list-comp>
-<app-todo-table-comp></app-todo-table-comp>
+<div class="bts">
+  <button routerLink="todo-list">View To-Do in List</button>
+  <button routerLink="todo-table">View To-Do in Table</button>
+  <button routerLink="">Reset Page</button>
+  <button routerLink="space-x">SpaceX Missions</button>
+</div>
+<router-outlet></router-outlet>
